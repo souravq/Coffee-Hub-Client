@@ -65,7 +65,7 @@ export default function LandingPage() {
       </div>
 
       {/* Popular Products */}
-      <div className="popularProduct">
+      <div className="popularProduct" style={{paddingBottom:"30px"}}>
         <div className="popularProductHeadDiv">
           <p className="popularProductTagLine">--- Sip & Savor ---</p>
           <p className="popularProductHeading">Our Popular Products</p>
@@ -73,7 +73,7 @@ export default function LandingPage() {
         </div>
         <br/>
 
-        <div className="coffeeProduct grid grid-cols-2 gap-4">
+        <div className="coffeeProduct grid grid-cols-2 gap-4" style={{marginBottom:"30px"}}>
           {
             coffeeData.map((coffee,index)=>{
               return(
@@ -81,21 +81,8 @@ export default function LandingPage() {
               )
             })
           }
-          {/* <CoffeeCard/>
-          <CoffeeCard/>
-          <CoffeeCard/>
-          <CoffeeCard/>
-          <CoffeeCard/>
-          <CoffeeCard/> */}
         </div>
-
-
       </div>
-
-      
-
-
-
     </div>
   );
 }
