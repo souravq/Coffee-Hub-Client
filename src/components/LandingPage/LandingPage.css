@@ -1,0 +1,123 @@
+.herosection{
+    /* background: url(../../assets/images/more/3.png), lightgray 50% / cover no-repeat; */
+    width: 100vw; /* Set the width you desire */
+    height: 600px; /* Set the height you desire */
+    background-image: url(../../assets/images/more/3.png); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.herosectionInnerDiv{
+    margin-right: 150px;
+}
+.heroTitle{
+    color: #FFF;
+    font-family: Rancho;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.heroText{
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+}
+.heroButton{
+    background: #E3B577;
+    width: 120px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-top: 10px;
+}
+.heroButton span{
+    color: #242222;
+    font-family: Rancho;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.features{
+    width: 100%;
+    height: 220px;
+    flex-shrink: 0;
+    background: #ECEAE3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    padding: 0 230px;
+}
+.features .heading{
+    margin-top: 10px;
+    color: #331A15;
+    font-family: Rancho;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.featuresText{
+    margin-top: 10px;
+    color: #1B1A1A;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+.popularProduct{
+    background-color: #FFF;;
+}
+.popularProductHeadDiv{
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.popularProductTagLine{
+    color: #1B1A1A;
+text-align: center;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 130% */
+}
+.popularProductHeading{
+    color: #331A15;
+    text-align: center;
+font-family: Rancho;
+font-size: 55px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.popularProductAddButton{
+border-radius: 5px;
+border: 2px solid #331A15;
+background: #E3B577;
+width: 150px;
+height: 48px;
+flex-shrink: 0;
+margin: 0 auto;
+}
+.addButtonText{
+    color: #FFF;
+font-family: Rancho;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
