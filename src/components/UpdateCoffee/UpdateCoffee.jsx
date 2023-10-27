@@ -11,7 +11,7 @@ export default function UpdateCoffee() {
     console.log(coffeeData);
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/coffee/${id.id}`)
+        fetch(`https://coffee-hub-server.vercel.app/coffee/${id.id}`)
         .then(res=>res.json())
         .then(data=>{
             if(data){
@@ -39,7 +39,7 @@ export default function UpdateCoffee() {
     const sendData = {coffeeId,coffeeName,coffeeChef,coffeeSupplier,coffeeTaste,coffeeCategory,coffeePrice,coffeePhotoUrl};
     console.log(coffeeId,coffeeName,coffeeChef,coffeeSupplier,coffeeTaste,coffeeCategory,coffeePrice,coffeePhotoUrl);
 
-    fetch("http://localhost:5000/coffee",{
+    fetch("https://coffee-hub-server.vercel.app/coffee",{
       method:"put",
       headers:{
         "Content-Type":"application/json",
@@ -70,7 +70,7 @@ export default function UpdateCoffee() {
             </div>
             <br/>
             <div style={{backgroundColor:"#F4F3F0", padding:"50px 0px"}}>
-            <p className="AddCoffeeCardHeading">Add New Coffee</p>
+            <p className="AddCoffeeCardHeading">Update Coffee</p>
               <p className="AddCoffeeCardTag">It is a long established fact that a reader will be distraceted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
               <br/>
               <form onSubmit={handleUpdate}>
@@ -130,7 +130,7 @@ export default function UpdateCoffee() {
                 <br/>
                 <div style={{display:"flex", justifyContent:"space-evenly"}}>
                     <div style={{width:"700px"}}>
-                      <button type="submit" className="AddCoffeeButton"><span className="AddCoffeeText">Add Coffee</span></button>
+                      <button type="submit" className="AddCoffeeButton"><span className="AddCoffeeText">Update Coffee</span></button>
                     </div>
                 </div>
               </form>

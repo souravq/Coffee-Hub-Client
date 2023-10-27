@@ -21,7 +21,7 @@ export default function AddCoffee() {
     const sendData = {coffeeName,coffeeChef,coffeeSupplier,coffeeTaste,coffeeCategory,coffeePrice,coffeePhotoUrl};
     console.log(coffeeName,coffeeChef,coffeeSupplier,coffeeTaste,coffeeCategory,coffeePrice,coffeePhotoUrl);
 
-    fetch("http://localhost:5000/coffee",{
+    fetch("https://coffee-hub-server.vercel.app/coffee",{
       method:"post",
       headers:{
         "Content-Type":"application/json",

@@ -15,7 +15,7 @@ export default function CoffeeCard({coffee}) {
   }
 
   function handleDelete(id){
-    fetch(`http://localhost:5000/coffee/${id}`,{
+    fetch(`https://coffee-hub-server.vercel.app/coffee/${id}`,{
       method:"delete",
     })
     .then(res=>res.json())

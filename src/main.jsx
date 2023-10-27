@@ -17,7 +17,7 @@ const router = createBrowserRouter([
       {
         path:"/",
         element:<LandingPage/>,
-        loader:()=>fetch("http://localhost:5000/coffee")
+        loader:()=>fetch("https://coffee-hub-server.vercel.app/coffee")
       },
       {
         path:"/add-coffee/",
